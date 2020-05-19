@@ -42,9 +42,30 @@ Start the container: docker run -dp port:port docker-image
 
 remove the container: container rm <container-id>
 
-Check how to get container ip in container_id.png....
+Check how to get container ip in docker_id.png....
 
 Great! you just finished setting up and running the container.
 
 Now, we can share this container Image with our community so other people can use it.
 
+
+To push an image, we first need to create a repo on Docker Hub.
+
+    Go to Docker Hub and log in if you need to.
+
+    Click the Create Repository button.
+
+    For the repo name, use 101-todo-app. Make sure the Visibility is Public.
+
+    Click the Create button!
+
+If you look on the right-side of the page, you'll see a section named Docker commands. This gives an example command that you will need to run to push to this repo.
+
+In your newly created instance if you run the following command then you can see the app running on your browser
+
+docker run -dp 3000:3000 sagar240894/101-todo-app
+
+
+For more info. go to Docker website and try play with docker. You will see the steps above to fulfill your requirements.
+
+Hope this helps.
